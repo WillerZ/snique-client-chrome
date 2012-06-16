@@ -1,8 +1,8 @@
 {
-  "name": "Snique",
+  "name": "snique",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "Snique message reader.",
+  "description": "Snique message reader",
   "content_scripts":
     [
       {
@@ -12,10 +12,11 @@
       }
     ],
   "permissions": ["storage","notifications","http://*/","https://*/"],
-  "web_accessible_resources": ["snique.png"],
+  "web_accessible_resources": ["icon48.png"],
   "background":
   {
     "scripts": ["aes.js","background.js"]
   },
+  "icons": { "16":"icon16.png","48":"icon48.png","128":"icon128.png"},
   "options_page": "settings.html"
 }

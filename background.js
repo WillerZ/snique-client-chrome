@@ -29,7 +29,7 @@ function tryDecode(array)
       var messageBuf = CryptoJS.enc.Hex.parse(messageHex);
       var printMessage = messageBuf.toString(CryptoJS.enc.Utf8);
       var notification = webkitNotifications.createNotification(
-	chrome.extension.getURL('snique.png'),
+	chrome.extension.getURL('icon48.png'),
 	'snique',
 	printMessage
       );
